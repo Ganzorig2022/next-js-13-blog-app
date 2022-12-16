@@ -64,9 +64,40 @@ http://localhost:3000/studio
 2.
 3. npm i @heroicons/react
 
-# 4 -
+# 4 - BACKEND development
 
 1. "/app/(user)" folder uusgeed "layout, page" file-uudiig MOVE hiiw.
 2. "/app/(admin)" folder uusgeed "/studio/[[...index]]" file-uudiig MOVE hiiw.
 3. "app/(user)/page.tsx" folder dotor MAIN COMPONENT-uudee orj ehelne. HOME PAGE gesen vg...
 4. "/lib" foldert file-uud uusgew.
+
+# 5 - Line -clamp
+
+Text-iig heden line-aar haruulhiig zaaj ogdog.
+className='line-clamp-2' gewel 2 moriig l haruulna.
+
+//https://tailwindcss.com/blog/multi-line-truncation-with-tailwindcss-line-clamp
+
+npm install @tailwindcss/line-clamp
+
+# 6 - Client Side Route
+
+-- Dynamic route
+
+1. "/components/ClientSideRoute.tsx" file uusgew.
+2. "/components/BlogList.tsx" file dotor blog-iin gaduur WRAP hiiw.
+3. Ingesneer DYNAMIC ROUTE buyu ali 1 blog card dr darhad doorh zam ruu userne.
+
+-- "http://localhost:3000/posts/javascript" iim zam ruu vserne.
+
+# 7 - Add custom field to sanity/studio
+
+1. "/schemas/post.ts" dotor "description" defineField shineer uusgew.
+2. "http://localhost:3000/studio/desk/post" studio dotor "description" ni FIELD orj irsen bn.
+
+# 8 - Deploy to VERCEL
+
+1. terminal dr "vercel"
+2. default songoltuudiig songono.
+3. env file-aa vercel dr oruulj ogno.
+4. https://next-js-13-blog-74dmrbokl-ganzorig2022.vercel.app/

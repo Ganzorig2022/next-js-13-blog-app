@@ -7,9 +7,10 @@ type Props = {
   query: string;
 };
 
+//imported from "/(user)/page.tsx
 const PreviewBlogList = ({ query }: Props) => {
   const posts = usePreview(null, query);
-  console.log('LOADING posts...', posts);
+  // console.log('LOADING posts...', posts);
   return <BlogList posts={posts} />;
 };
 

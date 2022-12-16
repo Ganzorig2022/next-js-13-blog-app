@@ -13,6 +13,8 @@ const query = groq`
 } | order(_createdAt desc) // ordering by descending
 `;
 
+export const revalidate = 30; // revalidate this page every 30 seconds
+
 async function HomePage() {
   if (previewData()) {
     return (
@@ -31,7 +33,6 @@ async function HomePage() {
   }
 
   const posts = await client.fetch(query);
-  console.log(posts);
 
   return (
     <div className=''>

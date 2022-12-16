@@ -5,6 +5,10 @@ module.exports = {
     appDir: true,
   },
   images: {
-    domains: ['images.unsplash.com', 'scontent.fuln8-1.fna.fbcdn.net'],
+    domains: [
+      'images.unsplash.com',
+      'scontent.fuln8-1.fna.fbcdn.net',
+      'cdn.sanity.io',
+    ],
   },
 };
